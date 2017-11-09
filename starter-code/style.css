@@ -2,7 +2,29 @@ body{
   background: black;
 }
 
-/*video{
-  width: 400px;
-  height: auto;
-}*/
+@media (max-width:600px){
+  .mobile{
+    width: 100vw;
+  }
+  .tablet, .desktop {
+    display: none;
+  }
+}
+
+@media (min-width:600px) and (max-width:900px){
+  .tablet{
+    width: 100vw;
+  }
+  .mobile, .desktop {
+    display: none;
+  }
+}
+
+@media (min-width:900px){
+  .desktop{
+    width: 100vw;
+  }
+  .tablet, .mobile{
+    display: none;
+  }
+}

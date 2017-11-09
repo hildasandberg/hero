@@ -4,26 +4,27 @@
     <meta charset="utf-8" />
     <title>Sprint 1: Hero video assignment</title>
     <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width">
   </head>
   <body>
 
-  <!-- place your code here -->
-<video controls autoplay>
-  <source src="videos/SampleVideo_360x240_1mb.mp4" type="video/mp4"
-  media="(max-width: 600px)"/>
-  <source src="videos/SampleVideo_360x240_1mb.webm" type="video/webm"
-  media="(max-width: 600px)"/>
-  <source src="videos/SampleVideo_720x480_1mb.mp4" type="video/mp4"
-  media="(max-width: 600px) (max-width: 900px)"/>
-  <source src="videos/SampleVideo_720x480_1mb.webm" type="video/webm"
-  media="(max-width: 600px) (max-width: 900px)"/>
-  <source src="videos/SampleVideo_1280x720_1mb.mp4" type="video/mp4"
-  media="(min-width: 900px)"/>
-  <source src="videos/SampleVideo_1280x720_1mb.webm" type="video/webm"
-  media="(min-width: 900px)"/>
+    <video class="desktop" autoplay loop muted>
+      <source src="videos/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+      <source src="videos/SampleVideo_1280x720_1mb.webm" type="video/webm">
+      <p>This browser doesn't support this awesome video!</p>
+    </video>
 
-  <p>This browser doesn't support this awesome video!</p>
-</video>
+    <video class="tablet" autoplay loop muted>
+      <source src="videos/SampleVideo_720x480_1mb.mp4" type="video/mp4">
+      <source src="videos/SampleVideo_720x480_1mb.webm" type="video/webm">
+      <p>This browser doesn't support this awesome video!</p>
+    </video>
+
+    <video class="mobile" autoplay loop muted>
+      <source src="videos/SampleVideo_360x240_1mb.mp4" type="video/mp4">
+      <source src="videos/SampleVideo_360x240_1mb.webm" type="video/webm">
+      <p>This browser doesn't support this awesome video!</p>
+    </video>
 
   </body>
 </html>
